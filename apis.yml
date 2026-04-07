@@ -1,16 +1,13 @@
 aid: restful-services
 name: RESTful Services
-description: Architectural style for building web services that use HTTP methods and
-  follow REST principles for creating scalable and stateless APIs. It supports the
-  full software development lifecycle from design through deployment and maintenance.
+description: Architectural style for building web services that use HTTP methods and follow REST principles for creating scalable and stateless APIs. It supports the full software development lifecycle from design through deployment and maintenance.
 type: Index
 url: https://raw.githubusercontent.com/api-evangelist/restful-services/refs/heads/main/apis.yml
 tags:
-- API
-- Web Services
-- REST
-- HTTP
-- Architecture
+  - Architecture
+  - HTTP
+  - REST
+  - Web Services
 created: '2025-01-01'
 modified: '2026-03-16'
 specificationVersion: '0.19'
