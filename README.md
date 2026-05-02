@@ -1,25 +1,53 @@
-# RESTful Services (restful-services)
-Architectural style for building web services that use HTTP methods and follow REST principles for creating scalable and stateless APIs. It supports the full software development lifecycle from design through deployment and maintenance.
+# RESTful Services
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/restful-services/refs/heads/main/apis.yml)
+Representational State Transfer (REST) services are web services built using the REST architectural style defined by Roy Fielding in 2000. RESTful services use stateless HTTP communication and standard HTTP methods (GET, POST, PUT, DELETE, PATCH) to expose resources. REST is the dominant pattern for modern public APIs and microservices.
 
-## Scope
+## References
 
-- **Type:** Index 
-- **Position:** Consuming 
-- **Access:** 3rd-Party 
+| Type | URL |
+|------|-----|
+| Roy Fielding Dissertation | https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm |
+| REST API Standards | https://standards.rest/ |
+| RESTful API Best Practices | https://restfulapi.net/ |
+| W3C REST Reference | https://www.w3.org/2001/sw/wiki/REST |
 
-## Tags:
+## Notable APIs and Services
 
- - API, Web Services, REST, HTTP, Architecture
+| Name | Description | URL |
+|------|-------------|-----|
+| Standards.REST | Curated REST standards and conventions | https://standards.rest/ |
+| Zalando REST Guidelines | Widely-adopted REST design guidelines | https://opensource.zalando.com/restful-api-guidelines/ |
+| Azure REST API Guidelines | Microsoft REST design guidelines | https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design |
+| AWS API Gateway | Amazon managed REST API service | https://aws.amazon.com/api-gateway/ |
+| Google Apigee | Google Cloud API management | https://cloud.google.com/apigee |
 
-## Timestamps
+## Artifacts
 
-- **Created:** 2025-01-01 
-- **Modified:** 2026-03-16 
+### JSON Schemas
+
+| File | Description |
+|------|-------------|
+| [json-schema/restful-services-resource-schema.json](json-schema/restful-services-resource-schema.json) | Abstract REST resource schema with hypermedia links |
+| [json-schema/restful-services-error-schema.json](json-schema/restful-services-error-schema.json) | RFC 7807 Problem Details error response schema |
+
+### JSON Structures
+
+| File | Description |
+|------|-------------|
+| [json-structure/restful-services-resource-structure.json](json-structure/restful-services-resource-structure.json) | REST resource field reference |
+
+### JSON-LD Context
+
+| File | Description |
+|------|-------------|
+| [json-ld/restful-services-context.jsonld](json-ld/restful-services-context.jsonld) | JSON-LD context using Hydra, Dublin Core, and schema.org |
+
+### Vocabulary
+
+| File | Description |
+|------|-------------|
+| [vocabulary/restful-services-vocabulary.yml](vocabulary/restful-services-vocabulary.yml) | Core REST architectural vocabulary |
 
 ## Maintainers
 
-**FN:** Kin Lane
-
-**Email:** kin@apievangelist.com
+- **Kin Lane** — kin@apievangelist.com

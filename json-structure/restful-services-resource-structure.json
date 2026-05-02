@@ -1,0 +1,12 @@
+{
+  "name": "REST Resource",
+  "description": "Common structural pattern for a RESTful API resource with identifier, metadata, and hypermedia links.",
+  "fields": [
+    { "name": "id", "type": "string|integer", "description": "Unique resource identifier", "required": true },
+    { "name": "type", "type": "string", "description": "Resource type name", "required": false },
+    { "name": "href", "type": "string", "description": "Canonical self-link URL for this resource", "required": false },
+    { "name": "createdAt", "type": "string", "description": "ISO 8601 creation timestamp", "required": false },
+    { "name": "updatedAt", "type": "string", "description": "ISO 8601 last modified timestamp", "required": false },
+    { "name": "_links", "type": "object", "description": "HAL-style hypermedia links to related resources and actions", "required": false }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "hydra": "http://www.w3.org/ns/hydra/core#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "rest": "https://api-evangelist.github.io/restful-services/vocab/",
+
+    "Resource": "hydra:Resource",
+    "Collection": "hydra:Collection",
+    "Operation": "hydra:Operation",
+    "Link": "hydra:Link",
+    "Error": "schema:Error",
+
+    "id": "@id",
+    "type": "@type",
+    "href": {
+      "@id": "hydra:apiDocumentation",
+      "@type": "@id"
+    },
+    "createdAt": {
+      "@id": "dcterms:created",
+      "@type": "xsd:dateTime"
+    },
+    "updatedAt": {
+      "@id": "dcterms:modified",
+      "@type": "xsd:dateTime"
+    },
+    "title": "dcterms:title",
+    "description": "dcterms:description",
+    "status": {
+      "@id": "schema:status",
+      "@type": "xsd:integer"
+    },
+    "detail": "schema:description",
+    "method": "hydra:method",
+    "expects": {
+      "@id": "hydra:expects",
+      "@type": "@id"
+    },
+    "returns": {
+      "@id": "hydra:returns",
+      "@type": "@id"
+    },
+    "member": {
+      "@id": "hydra:member",
+      "@container": "@list"
+    },
+    "totalItems": {
+      "@id": "hydra:totalItems",
+      "@type": "xsd:integer"
+    },
+    "name": "schema:name",
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "version": "schema:version"
+  }
+}

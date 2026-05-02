@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/restful-services/schemas/rest-resource",
+  "title": "REST Resource",
+  "description": "Abstract schema for a RESTful API resource, defining the common structural pattern of a REST resource with identifier, metadata, and links.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": ["string", "integer"],
+      "description": "Unique resource identifier"
+    },
+    "type": {
+      "type": "string",
+      "description": "Resource type name (e.g., user, order, product)"
+    },
+    "href": {
+      "type": "string",
+      "format": "uri",
+      "description": "Self-link: the canonical URL for this resource"
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 creation timestamp"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 last modification timestamp"
+    },
+    "_links": {
+      "type": "object",
+      "description": "Hypermedia links (HAL-style) to related resources and available actions",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "href": { "type": "string", "format": "uri" },
+          "method": { "type": "string", "enum": ["GET", "POST", "PUT", "DELETE", "PATCH"] },
+          "title": { "type": "string" }
+        }
+      }
+    }
+  },
+  "required": ["id"]
+}

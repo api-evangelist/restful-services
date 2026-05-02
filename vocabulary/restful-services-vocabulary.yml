@@ -1,0 +1,146 @@
+name: RESTful Services Vocabulary
+description: >-
+  Core vocabulary for RESTful services covering REST architectural
+  constraints, HTTP semantics, resource design, and API lifecycle concepts.
+tags:
+  - Architecture
+  - HTTP
+  - REST
+  - Vocabulary
+  - Web Services
+created: '2026-05-02'
+modified: '2026-05-02'
+terms:
+  - term: REST
+    definition: >-
+      Representational State Transfer. An architectural style for distributed
+      hypermedia systems defined by Roy Fielding in his 2000 doctoral
+      dissertation. REST is not a protocol or standard but a set of
+      architectural constraints.
+    tags:
+      - Core Concept
+
+  - term: Resource
+    definition: >-
+      Any named information that can be addressed via a URL. Resources are
+      the central abstraction in REST. A resource can be a document, image,
+      collection, service, or any other concept. Resources are identified by
+      URIs (Uniform Resource Identifiers).
+    tags:
+      - Core Concept
+
+  - term: Representation
+    definition: >-
+      The current or intended state of a resource, captured in a data format
+      such as JSON, XML, or HTML. Clients interact with resources through
+      their representations, not the resource itself.
+    tags:
+      - Core Concept
+
+  - term: Statelessness
+    definition: >-
+      A core REST constraint requiring that each request from client to server
+      contain all information needed to understand the request. Session state
+      is kept entirely on the client. Servers do not store client session data
+      between requests.
+    tags:
+      - Constraints
+
+  - term: Uniform Interface
+    definition: >-
+      The central REST constraint that simplifies and decouples architecture
+      by applying four sub-constraints: resource identification in requests,
+      resource manipulation through representations, self-descriptive messages,
+      and hypermedia as the engine of application state (HATEOAS).
+    tags:
+      - Constraints
+
+  - term: HATEOAS
+    definition: >-
+      Hypermedia As The Engine Of Application State. A REST constraint where
+      clients interact with a REST API entirely through hypermedia provided
+      dynamically by the server, enabling discoverability without prior
+      knowledge of the URL structure.
+    tags:
+      - Constraints
+      - Hypermedia
+
+  - term: Idempotency
+    definition: >-
+      A property of HTTP methods where making the same request multiple times
+      produces the same result as making it once. GET, PUT, DELETE, and HEAD
+      are idempotent. POST is not.
+    tags:
+      - HTTP Semantics
+
+  - term: Safe Method
+    definition: >-
+      An HTTP method that does not modify the state of the server. GET, HEAD,
+      and OPTIONS are safe. Safe methods may still be cacheable and logged.
+    tags:
+      - HTTP Semantics
+
+  - term: Content Negotiation
+    definition: >-
+      The mechanism where a client and server agree on the format of the
+      response via Accept and Content-Type headers. Enables the same resource
+      to be served as JSON, XML, CSV, or other formats.
+    tags:
+      - HTTP Semantics
+
+  - term: URI Template
+    definition: >-
+      A string literal or expression (RFC 6570) for defining parameterized
+      URIs. Used in OpenAPI and REST documentation to describe path patterns
+      such as /users/{userId}/orders/{orderId}.
+    tags:
+      - URI Design
+
+  - term: Collection Resource
+    definition: >-
+      A REST resource that represents a set of member resources, typically
+      addressed as a plural noun (e.g., /users, /orders). Supports listing,
+      filtering, and creating new members via GET and POST.
+    tags:
+      - Resource Design
+
+  - term: Singleton Resource
+    definition: >-
+      A REST resource that represents a single instance, addressed by
+      identifier (e.g., /users/{id}). Supports GET (read), PUT/PATCH (update),
+      DELETE (remove).
+    tags:
+      - Resource Design
+
+  - term: Hypermedia
+    definition: >-
+      Links and controls embedded in REST API responses that describe available
+      next actions and related resources. HAL, JSON:API, and Siren are
+      hypermedia formats for RESTful APIs.
+    tags:
+      - Hypermedia
+
+  - term: API Versioning
+    definition: >-
+      Strategy for managing breaking changes in a REST API. Common approaches:
+      URI versioning (/v1/users), header versioning (Accept-Version), and
+      query parameter versioning (?version=1).
+    tags:
+      - API Design
+
+  - term: Pagination
+    definition: >-
+      Pattern for returning large collections in manageable pages. Common
+      approaches: cursor-based (after=cursor), offset-based (?offset=0&limit=20),
+      and page-based (?page=1&per_page=20).
+    tags:
+      - API Design
+
+  - term: HTTP Status Code
+    definition: >-
+      Three-digit code in HTTP responses indicating outcome. Key codes: 200 OK,
+      201 Created, 204 No Content, 400 Bad Request, 401 Unauthorized,
+      403 Forbidden, 404 Not Found, 422 Unprocessable Entity, 429 Too Many
+      Requests, 500 Internal Server Error.
+    tags:
+      - HTTP Semantics
