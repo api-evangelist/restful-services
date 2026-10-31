@@ -64,54 +64,101 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Representational State Transfer (REST) services are web services built using the REST architectural style defined by Roy Fielding in 2000. RESTful services use stateless HTTP communication and standard HTTP methods (GET, POST, PUT, DELETE, PATCH) to expose resources. REST is the dominant pattern for modern public APIs and microservices.
+Representational State Transfer (REST) services are web services built using the REST architectural style, which uses stateless HTTP communication and standard HTTP methods (GET, POST, PUT, DELETE, PATCH) to expose resources. RESTful services are the dominant pattern for modern public APIs and microservices. This index covers the REST architectural style, key design principles, tooling ecosystem, and notable frameworks for building REST services across all technology stacks.
 
-## References
+**Areas:** Architecture · HTTP · Microservices · REST · Web Services
 
-| Type | URL |
-|------|-----|
-| Roy Fielding Dissertation | https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm |
-| REST API Standards | https://standards.rest/ |
-| RESTful API Best Practices | https://restfulapi.net/ |
-| W3C REST Reference | https://www.w3.org/2001/sw/wiki/REST |
+## RESTful Services on APIs.io
 
-## Notable APIs and Services
+Everything profiled for RESTful Services is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/restful-services/](https://apis.io/providers/restful-services/)** — or go straight to one of the APIs or properties below.
 
-| Name | Description | URL |
-|------|-------------|-----|
-| Standards.REST | Curated REST standards and conventions | https://standards.rest/ |
-| Zalando REST Guidelines | Widely-adopted REST design guidelines | https://opensource.zalando.com/restful-api-guidelines/ |
-| Azure REST API Guidelines | Microsoft REST design guidelines | https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design |
-| AWS API Gateway | Amazon managed REST API service | https://aws.amazon.com/api-gateway/ |
-| Google Apigee | Google Cloud API management | https://cloud.google.com/apigee |
+### APIs (5)
 
-## Artifacts
+- [Standards.REST](https://apis.io/apis/restful-services/standards-rest/) — A curated collection of standards, conventions, and best practices for building RESTful APIs, including HAL, JSON:API, Siren, Collection+JSON, and HATEOAS…
+- [Zalando RESTful API and Event Guidelines](https://apis.io/apis/restful-services/zalando-rest-guidelines/) — Zalando's comprehensive and widely-adopted RESTful API design guidelines, covering naming conventions, HTTP methods, versioning, error handling, pagination,…
+- [Microsoft Azure REST API Guidelines](https://apis.io/apis/restful-services/azure-rest-guidelines/) — Microsoft's official REST API design guidelines for Azure services, covering resource naming, versioning, HTTP semantics, long-running operations, and error…
+- [AWS API Gateway](https://apis.io/apis/restful-services/aws-api-gateway/) — Amazon Web Services fully managed service for creating, publishing, maintaining, monitoring, and securing REST APIs at any scale.
+- [Google Apigee API Management](https://apis.io/apis/restful-services/google-apigee/) — Google Cloud's API management platform for building, managing, and securing RESTful APIs. Provides analytics, developer portal, rate limiting, and policy…
 
-### JSON Schemas
+### Published properties
 
-| File | Description |
-|------|-------------|
-| [json-schema/restful-services-resource-schema.json](json-schema/restful-services-resource-schema.json) | Abstract REST resource schema with hypermedia links |
-| [json-schema/restful-services-error-schema.json](json-schema/restful-services-error-schema.json) | RFC 7807 Problem Details error response schema |
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### JSON Structures
+#### JSON Schema (2)
 
-| File | Description |
-|------|-------------|
-| [json-structure/restful-services-resource-structure.json](json-structure/restful-services-resource-structure.json) | REST resource field reference |
+The data models the API reads and writes.
 
-### JSON-LD Context
+- [REST Error Response](https://apis.io/schemas/restful-services/restful-services-error/)
+- [REST Resource](https://apis.io/schemas/restful-services/restful-services-resource/)
 
-| File | Description |
-|------|-------------|
-| [json-ld/restful-services-context.jsonld](json-ld/restful-services-context.jsonld) | JSON-LD context using Hydra, Dublin Core, and schema.org |
+#### JSON Structure (1)
 
-### Vocabulary
+Data models expressed in JSON Structure.
 
-| File | Description |
-|------|-------------|
-| [vocabulary/restful-services-vocabulary.yml](vocabulary/restful-services-vocabulary.yml) | Core REST architectural vocabulary |
+- [Restful Services Resource Structure](https://apis.io/json-structure/restful-services/restful-services-resource-structure/)
 
-## Maintainers
+#### JSON-LD (1)
 
-- **Kin Lane** — kin@apievangelist.com
+Linked-data contexts for the provider's vocabulary.
+
+- [Restful Services Context](https://apis.io/jsonld/restful-services/restful-services-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [RESTful Services Vocabulary](https://apis.io/vocabularies/restful-services/restful-services-vocabulary/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [RESTful Services — jsonschema rules](https://apis.io/rules/restful-services/restful-services-jsonschema-spectral-rules/)
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Restful Services Domain Security](https://apis.io/security/restful-services/restful-services-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Restful Services Plans Pricing](https://apis.io/plans/restful-services/restful-services-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Restful Services Rate Limits](https://apis.io/rate-limits/restful-services/restful-services-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Restful Services Finops](https://apis.io/finops/restful-services/restful-services-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Documentation](https://restfulapi.net/)
+
+## API Evangelist rating
+
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
+
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for RESTful Services: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/restful-services/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
